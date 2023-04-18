@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import axios from 'axios'
+import allQuestions from '../questions.js';
 import GameOver from './GameOver';
 
 const QuizWindow = styled.div`
@@ -22,12 +22,12 @@ const Options = styled.div`
 
 const Option = styled.button`
     display: block;
-    border: 1px solid #616A94;
+    border: 1px solid #008F39;
     border-radius: 15px;
     padding: 15px 30px;
     text-decoration: none;
-    color: #616A94;
-    background-color: #161A31;
+    color: #FFF;
+    background-color: #77dd77;
     transition: 0.3s;
     font-size: 1em;
     outline: none;
@@ -38,7 +38,7 @@ const Option = styled.button`
     @media screen and (min-width: 1180px) {
         &:hover {
             color: white;
-            background-color: #616A94;
+            background-color: #008F39;
         }
     }
 `;
@@ -66,9 +66,8 @@ const Quiz = () => {
 
     useEffect(() => {
 
-        axios.get('https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple')
-            .then(res => {
-                setQuiz(res.data.results.map(item => (
+        const questions = allQuestions
+        setQuiz(questions.map(item => (
 
                     {
                         question: item.question,
@@ -77,10 +76,9 @@ const Quiz = () => {
                     }
 
                 )));
-            })
-            .catch(err => console.error(err))
-
-    }, []);
+            }
+    
+    , []);
 
 
     return (
