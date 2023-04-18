@@ -9,14 +9,14 @@ const allQuestions = [
         "correct_answer" : "Bodas de algodón",
         "incorrect_answers" : ["Bodas de seda","Bodas de cobre","Bodas de cuero", "Bodas de arcilla"]
     },{
-        "question" : "Ratatotuile",
-        "correct_answer" : "blabla",
-        "incorrect_answers" : ["A","B","C"]
+        "question" : "Prometo nunca regalarte zapatos brillantes",
+        "correct_answer" : "Siguiente",
+        "incorrect_answers" : []
     },
     {
-        "question" : "Ratatotuile",
-        "correct_answer" : "blabla",
-        "incorrect_answers" : ["A","B","C"]
+        "question" : "Comida típica francesa, se puede ver en la pelicula Ratatouille",
+        "correct_answer" : "Fresas con queso",
+        "incorrect_answers" : ["Pan Baggete","Pan Frances","Fresas con queso", "Omelette du fromage"]
     },{
         "question" : "Ratatotuile",
         "correct_answer" : "blabla",
