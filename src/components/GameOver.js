@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styled from 'styled-components'
 import {Button} from './Button'
 import result from '../img/result.jpeg'
+import allQuestions from '../questions.js'
 
 const Title = styled.h1`
     margin-top: 4em;
@@ -25,7 +26,7 @@ const GameOver = ({pts}) => {
         return(
             <> 
             <Title>Has completado el quiz mi amor</Title>
-            <Points>Hiciste {pts} de 5</Points>
+            <Points>Hiciste {pts} de {allQuestions.length}</Points>
             <Button onClick ={ () =>setShowFinalResult(true)}>Reclamar premio</Button>
         </>
         )
