@@ -2,9 +2,10 @@
   "name": "react-quiz",
   "version": "0.1.0",
   "author": "AykutSarac",
-  "homepage": "https://aykutsarac.github.io/react-quiz/",
+  "homepage": "https://alejofila.github.io/react-quiz/",
   "dependencies": {
     "axios": "^0.21.1",
+    "gh-pages": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
