@@ -65,7 +65,6 @@ const Quiz = () => {
     }
 
     useEffect(() => {
-
         const questions = allQuestions
         setQuiz(questions.map(item => (
 
@@ -97,7 +96,7 @@ const Quiz = () => {
 
             }
             {
-                number === 5 && <GameOver pts={pts} />
+                number === allQuestions.length && <GameOver pts={pts} />
             }
         </QuizWindow>
     )
