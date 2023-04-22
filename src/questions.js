@@ -1,8 +1,8 @@
 const allQuestions = [
     {
-        "question" : "¿De que color era mi camiseta el dia en que nos conocimos?",
-        "correct_answer" : "Negra",
-        "incorrect_answers" : ["Verde feid","Azul","Blanca", "Roja"]
+        "question" : "¿Cuantos cocteles botaste el dia que nos despedimos en Cartagena?",
+        "correct_answer" : "7",
+        "incorrect_answers" : ["3","4","5"]
     },
     {
         "question" : "Prometo aprender a proteger tus sentimientos",
@@ -34,7 +34,7 @@ const allQuestions = [
         "incorrect_answers" : ["Zurich","Munich","Lisboa"]
     },
     {
-        "question" : "Prometo que arruncharte cada noche",
+        "question" : "Prometo que arruncharte cada noche al escuchar tu primer ronroneo",
         "correct_answer" : "Volver al quiz",
         "incorrect_answers" : []
     },
